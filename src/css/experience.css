@@ -1,13 +1,15 @@
 
+.container {
+  margin: 0 auto;
+}
+
 .experience-container {
   display: flex;
   flex-direction: column;
 }
 
 .experience-text-block {
-  max-width: 288px;
   margin: 0 auto 32px;
-
 }
 
 .title-experience {
@@ -38,72 +40,49 @@
 
 .list-item {
   display: block;
-  width: 288px;
+  width: 100%;
 }
 
 .img-item {
   border-radius: 32px;
-  width: 288px;
-
   object-fit: cover;
 }
 
-.list-item:last-child {
-  .img-item {
-    height: 391px;
-  }
+.list-item:last-child .img-item {
+  height: 391px;
 }
 
-.image-source {
-  width: 288px;
-}
 
 @media only screen and (min-width: 768px) {
 
-  .experience-text-block {
-    max-width: 768px;
-  }
-
   .list-images {
-    display: grid;
-    grid-template-columns: repeat(2, 336px);
-    gap: 32px;
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
   }
 
   .list-item {
-    display: block;
-    width: 336px;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100% - 32px)/2);
   }
 
-  .list-item:last-child {
+  .img-item {
+    object-fit: cover;
+  }
+
+  .list-item:last-child .img-item {
     width: 100%;
   }
 
-  .image-source {
-    width: 336px;
+  .list-item:nth-child(7) {
+    width: 100%;
   }
 
   .image-source:last-child {
     width: 100%;
   }
-
-  .img-item {
-    width: 336px;
-    object-fit: cover;
-
-    height: auto;
-    display: block;
-  }
-
-  .img-item:last-child {
-    width: 100%;
-  }
-
-  .list-item:nth-child(7) {
-      grid-column: 1 / -1;
-  }
-
 }
 
 
@@ -126,28 +105,16 @@
     width: fit-content;
   }
 
-  /*.list-item:nth-child(3) {*/
-  /*  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);*/
-  /*}*/
-
-  /*.img-item:nth-child(3) {*/
-  /*  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);*/
-  /*}*/
-
-  /*.item-three {*/
-  /*  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);*/
-  /*}*/
-
   .item-three, .item-four {
     height: 234px;
   }
 
   .image-source {
-    width: 416px;
+    width: 100%;
   }
 
   .image-source:last-child {
-    width: 416px;
+    width: 100%;
   }
 
   .img-item {
@@ -158,10 +125,8 @@
     display: block;
   }
 
-  .list-item:last-child {
-    .img-item {
+  .list-item:last-child .img-item {
       height: 416px;
       width: 416px;
-    }
   }
 }
