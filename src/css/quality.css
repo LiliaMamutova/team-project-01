@@ -18,7 +18,6 @@ ul {
 
 .quality-wrapper {
     max-width: 100%;
-    padding: 0 16px;
     margin: 0 auto;
 }
 
@@ -103,7 +102,6 @@ ul {
 
     .quality-wrapper {
         max-width: 768px;
-        padding: 0 32px;
     }
 
     .quality-container {
@@ -155,7 +153,6 @@ ul {
 @media (min-width: 1440px) {
     .quality-wrapper {
         max-width: 1440px;
-        padding: 0;
     }
 
     .quality-section {
