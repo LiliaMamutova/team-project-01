@@ -1,8 +1,8 @@
 <section>
   <div class="container">
     <div class="welcome-content">
-      <div class="welcome-text">
-        <div class="welcome-header">
+      <div class="welcome-header">
+        <div class="welcome-box">
           <p class="welcome">Welcome</p>
           <h2 class="title">Our Journey: Passion for Quality Coffee</h2>
         </div>
@@ -22,11 +22,38 @@
           </a>
         </div>
       </div>
-      <img
-        class="img-welcome"
-        src="/img/coffee-journey.jpg"
-        alt="Coffee Journey"
-      />
+
+      <div class="img-welcome">
+        <picture class="img-welcome-picture">
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              /img/welcome/welcome-desk.jpg    1x,
+              /img/welcome/welcome-desk-2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              /img/welcome/welcome-tab.jpg    1x,
+              /img/welcome/welcome-tab-2x.jpg 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              /img/welcome/welcome-mob.jpg    1x,
+              /img/welcome/welcome-mob-2x.jpg 2x
+            "
+          />
+
+          <img
+            class="img-welcome-img"
+            src="/img/welcome/welcome-desk.jpg"
+            alt="Welcome to CoffeeJoy"
+          />
+        </picture>
+      </div>
     </div>
   </div>
 </section>
