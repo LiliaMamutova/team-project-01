@@ -77,8 +77,8 @@ background: #755640;
 }
 
 .subscribe_icon {
-    width: 13px;
-    height: 12px;
+    /* width: 24px;
+    height: 24px; */
     display: block;
   fill: #FFFFFF;
 }
