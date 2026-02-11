@@ -2,9 +2,11 @@
 .page-footer {
   background-color: #b58869;
   padding: 24px 0;
+  margin: 0 auto;
 }
 .light-background {
   padding: 0 16px;
+  min-width: 320px;
   max-width: 375px;
   width: 100%;
   margin: 0 auto;
@@ -98,7 +100,7 @@ footer .social-link:active {
   .light-background {
     padding: 0 32px;
     width: 100%;
-    max-width: 704px;
+    max-width: 768px;
   }
   .logo {
     width: 84px;
@@ -140,7 +142,7 @@ footer .social-link:active {
 @media screen and (min-width: 1440px) {
   .light-background {
     padding: 0 64px;
-    max-width: 1312px;
+    max-width: 1440px;
   }
   .footer-wrapper {
     width: 100%;
