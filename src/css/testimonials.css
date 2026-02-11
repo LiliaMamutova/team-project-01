@@ -1,3 +1,7 @@
+.testimonial-section {
+    padding: 64px 0;
+}
+
 .testimonial-title {
     font-family: "Aboreto", sans-serif;
     font-weight: 400;
@@ -28,7 +32,7 @@
         min-width: 265px;
 }
 
-.testimonials-rating {
+.testimonials-rating-list {
     display: flex;
     gap: 4px;
     margin-bottom: 24px;
