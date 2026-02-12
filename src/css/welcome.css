@@ -1,8 +1,10 @@
 .welcome-section {
-  padding: 64px 16px;
+  padding: 64px 0;
 }
 .welcome-section .container {
-  padding: 0;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 .welcome-header {
   width: 100%;
@@ -101,10 +103,13 @@
 
 @media only screen and (min-width: 768px) {
   .welcome-section {
-    padding: 64px 32px;
+    padding: 64px 0;
   }
-  .container {
+  .welcome-section .container {
     max-width: 768px;
+    width: 100%;
+    padding: 0 32px;
+    margin: 0 auto;
   }
 
   .welcome-content {
@@ -148,10 +153,13 @@
 
 @media only screen and (min-width: 1440px) {
   .welcome-section {
-    padding: 64px;
+    padding: 64px 0;
   }
-  .container {
+  .welcome-section .container {
     max-width: 1440px;
+    width: 100%;
+    padding: 0 64px;
+    margin: 0 auto;
   }
 
   .title {
